@@ -1,0 +1,1037 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $bluedark
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: #000
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+
+body
+  background-color: #FDF9E6
+html
+  scroll-behavior: smooth
+a
+  text-decoration: none
+  display: inline-block
+.container
+  max-width: 1220px
+  margin: 0 auto
+  padding: 0 10px
+
+.header1
+	position: relative
+	width: 100%
+	height: 100px
+	background-color: $bluedark
+	z-index: 200
+	transition: top 0.3s
+	z-index: 50
+
+.header
+	position: fixed
+	width: 100%
+	height: 100px
+	background-color: $bluedark
+	z-index: 200
+	transition: top 0.3s
+	z-index: 50
+.top-line
+	display: flex
+	justify-content: space-between
+.menu__list
+	float: right
+	list-style-type: none
+.menu
+	z-index: 3
+	&__item
+		display: inline-block
+		padding-left: 30px
+		color: #fff
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 24px
+		line-height: 28px
+	&__list
+		display: flex
+		justify-content: space-between
+	&__items
+		padding-left: 20px
+		display: flex
+		flex-direction: row
+	&__link
+		line-height: 100px
+		display: inline-block
+		color: #fff
+		text-decoration: none
+		transition: all .5s ease
+		&:hover, &:active
+			color: $bluelight
+			text-decoration: none
+	&__item-s
+			padding-left: 20px
+			display: flex
+			flex-direction: row
+
+.header::before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: $bluedark
+  z-index: 2
+
+.header1::before
+  content: ''
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background-color: $bluedark
+  z-index: 2
+
+.logo
+	font-family: 'Raleway', sans-serif
+	font-style: normal
+	font-weight: 700
+	font-size: 28px
+	color: #FFFFFF
+	line-height: 100px
+	display: inline-block
+	z-index: 3
+
+.sub-header
+	padding-top: 40px
+
+.header
+	&__main-part
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		text-align: center
+		color: #000000
+	&__main-ttl
+		font-weight: 700
+		font-size: 50px
+		line-height: 60px
+		margin-bottom: -14px
+	&__main-subttl
+		font-weight: 300
+		font-size: 24px
+		line-height: 34px
+		margin: 25px 0
+.sub-header__inner
+	min-height: 500px
+	display: flex
+	justify-content: space-around
+	flex-direction: column
+
+.button-blue
+	font-family: 'Raleway', sans-serif
+	font-style: normal
+	font-weight: 300
+	font-size: 24px
+	line-height: 34px
+	text-align: center
+	text-transform: uppercase
+	color: $yellowlight
+	background-color: $bluelight
+	padding: 11px 40px
+	transition: all .5s ease
+	&:hover, &:active
+		background-color: $bluedark
+		text-decoration: none
+		color: $yellowlight
+
+.header__main-part
+	&:first-child
+		margin-left: 55px
+
+.header__main-img
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	max-width: 130%
+	height: auto
+
+.header__main
+	position: relative
+.header__main-part
+	&:first-child
+		float: left
+	&:last-child
+		position: absolute
+		bottom: -193px
+		right: 73px
+
+.qual
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	height: 500px
+
+.qual
+	&__inner
+		padding-top: 70px
+	&__text
+		background: rgba(255, 255, 255, 0.6)
+		width: 85%
+		margin: auto
+	&__ttl
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 700
+		font-size: 28px
+		line-height: 33px
+		text-align: center
+		padding: 20px 10px 10px 10px
+		margin-bottom: 0
+	&__p
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 24px
+		line-height: 28px
+		text-align: center
+		padding: 0 40px 20px 40px
+		margin-bottom: 0
+
+
+.qual
+	margin-bottom: 400px
+	&__blocks
+		display: flex
+		flex-direction: row
+		justify-content: space-between
+		margin-top: 170px
+	&__block-ttl
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 700
+		font-size: 23px
+		line-height: 27px
+		text-align: center
+		color: #fff
+		margin-bottom: 10px
+	&__block-p
+		text-align: center
+		color: #fff
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 19px
+		line-height: 22px
+	&__block-one
+		max-width: 360px
+		padding: 40px 30px
+		&:nth-child(1)
+			background-color: $bluelight
+		&:nth-child(2)
+			background-color: $bluedark
+		&:nth-child(3)
+			background-color: $bluelight
+
+.aboutme
+	margin-bottom: 100px
+	&__inner
+		display: flex
+		justify-content: space-around
+	&__box
+		display: flex
+		justify-content: center
+		flex-direction: column
+	&__box-wrapper
+		display: block
+		text-align: left
+	&__text
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 24px
+		line-height: 28px
+		color: #000000
+		max-width: 528px
+		position: relative
+		&::after
+			content: ''
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			background-image: url(../img/Ellipse6.png)
+			position: absolute
+			top: -111px
+			right: 465px
+			width: 60px
+			height: 60px
+		&::before
+			content: ''
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			background-image: url(../img/Rectangle20.png)
+			position: absolute
+			top: -2px
+			left: -31px
+			width: 12px
+			height: 86px
+.aboutme__box-wrapper
+	position: relative
+	&::after
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Ellipse4.png)
+		position: absolute
+		top: 200px
+		right: 3px
+		width: 110px
+		height: 110px
+.aboutme__photo-img
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	width: 100%
+	height: auto
+
+.advan
+	margin-bottom: 100px
+	&__one
+		display: flex
+		justify-content: space-between
+	&__ttl
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 700
+		font-size: 24px
+		line-height: 28px
+		margin-left: 40px
+		margin-bottom: 25px
+		color: #000000
+	&__item-txt
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 24px
+		line-height: 28px
+		color: #000000
+	&__block-left-first
+		display: flex
+		flex-direction: column
+		justify-content: center
+		position: relative
+		margin-left: 55px
+		margin-right: 70px
+		&::after
+			content: ''
+			background-size: cover
+			background-position: center
+			background-repeat: no-repeat
+			background-image: url(../img/rectangle_big.png)
+			position: absolute
+			width: 48px
+			height: 495px
+			left: -55px
+
+
+
+.text__black
+	font-family: 'Raleway', sans-serif
+	font-style: normal
+	font-weight: 300
+	font-size: 24px
+	line-height: 28px
+	color: #000000
+
+
+.slider
+	position: relative
+	display: flex
+	max-width: 678px
+	max-height: 636px
+	&__item
+	&__item-img
+		width: 678px
+		height: 636px
+		object-fit: cover
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+	&__item-wrapper
+
+.slick-next:before
+	content: ''
+.slick-prev:before
+	content: ''
+.button
+	z-index: 5
+	outline: none
+
+.slick-btn
+	position: absolute
+.slick-prev
+	left: 0
+.slick-next
+	right: 51px
+
+.advan
+	&__img-left
+		max-width: 521px
+		height: auto
+	&__block-right-t
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 400
+		font-size: 24px
+		line-height: 34px
+		font-variant: small-caps
+		color: #000000
+		margin: auto auto
+		position: relative
+		margin-left: 83px
+		margin-right: 33px
+	&__ttl-t
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 700
+		font-size: 24px
+		line-height: 28px
+		margin-bottom: 25px
+		color: #000000
+	&__txt
+		margin-bottom: 25px
+.advan__block-right-t
+	&::after
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Rectangle40.jpg)
+		position: absolute
+		width: 26px
+		height: 466px
+		left: -54px
+		top: -69px
+
+.prise
+	background-color: $bluedark
+	&__one
+		display: flex
+		justify-content: space-around
+
+
+	&__first-pic
+		max-width: 643px
+		max-height: 673px
+	&__first-text
+		display: flex
+		flex-direction: column
+		margin: auto
+	&__img-right
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		max-width: 643px
+		max-height: 673px
+
+	&__second-pic
+		max-width: 562px
+		max-height: 835px
+	&__second-text
+		display: flex
+		flex-direction: column
+		margin: auto
+	&__img-left
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		max-width: 601px
+		max-height: 835px
+
+
+	&__list
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 500
+		font-size: 24px
+		line-height: 28px
+		color: #FFFFFF
+		text-align: left
+		list-style-type: none
+		padding-left: 0
+		max-width: 418px
+		margin: auto auto 20px auto
+	&__item
+		text-align: left
+	&__ttl
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 700
+		font-size: 30px
+		line-height: 35px
+		text-align: center
+		color: #FFFFFF
+		max-width: 400px
+		margin: auto auto 20px auto
+
+
+.map
+	&__inner
+		display: flex
+		justify-content: space-between
+	&__left
+		display: flex
+		justify-content: center
+		flex-direction: column
+		margin-left: 80px
+		margin-right: 20px
+	&__ttl
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 700
+		font-size: 24px
+		line-height: 28px
+		color: #000000
+		text-align: center
+	&__link
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 500
+		font-size: 20px
+		line-height: 23px
+		color: #000000
+		transition: all .5s ease
+		display: flex
+		flex-direction: row
+		padding: 20px 0
+		&:hover
+			text-decoration: none
+			color: $bluedark
+	&__list
+		margin: 0
+		padding: 0
+		list-style-type: none
+		display: flex
+		flex-direction: column
+	&__img
+		padding-right: 15px
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		height: auto
+
+
+.map__list
+	position: relative
+	&::after
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Ellipse7.png)
+		position: absolute
+		width: 100px
+		height: 100px
+		right: 0
+		top: 200px
+	&::before
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Rectangle64.jpg)
+		position: absolute
+		width: 22px
+		height: 299px
+		left: -58px
+		top: -44px
+
+.map__right
+	filter: grayscale(100%)
+.footer
+	background-color: $bluedark
+	&__inner
+		display: flex
+		justify-content: space-around
+	&__img
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		width: 100%
+		height: auto
+	&__left
+		margin-right: auto
+	&__right
+		max-width: 500px
+		margin: auto 128px auto auto
+		text-align: center
+	&__text
+		font-family: 'Raleway'
+		font-style: normal
+		font-weight: 500
+		font-size: 28px
+		line-height: 33px
+		text-align: center
+		color: $yellowlight
+		max-width: 459px
+		margin: auto auto 30px auto
+	&__link
+		font-family: 'Raleway', sans-serif
+		font-style: normal
+		font-weight: 300
+		font-size: 24px
+		line-height: 34px
+		text-align: center
+		text-transform: uppercase
+		color: $bluelight
+		background-color: $yellowlight
+		padding: 11px 40px
+		transition: all .5s ease
+		display: inline-block
+		margin-bottom: 30px
+		&:hover, &:active
+			background-color: $bluelight
+			text-decoration: none
+			color: $yellowlight
+
+.footer__right
+	position: relative
+	&::after
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Rectangle54.jpg)
+		position: absolute
+		width: 20px
+		height: 20px
+		right: -112px
+		top: 319px
+	&::before
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Rectangle54.jpg)
+		position: absolute
+		width: 20px
+		height: 20px
+		right: -112px
+		top: -130px
+.footer__left
+	position: relative
+	&::after
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Rectangle54.jpg)
+		position: absolute
+		width: 20px
+		height: 20px
+		right: -39px
+		top: 465px
+	&::before
+		content: ''
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		background-image: url(../img/Rectangle54.jpg)
+		position: absolute
+		width: 20px
+		height: 20px
+		right: -39px
+		top: 17px
+
+.burger_menu
+	display: none
+	z-index: 4
+	cursor: pointer
+	display: inline-block
+	padding: 23px
+
+.line1, .line2, .line3
+	width: 50px
+	height: 5px
+	background-color: #fff
+	margin: 10px 0
+	transition: all .5s
+
+.rotate .line1
+	transform: rotate(45deg) translate(12px, 10px)
+.rotate .line3
+	transform: rotate(-45deg) translate(12px, -9px)
+
+.rotate .line2
+	opacity: 0
+
+.hidden
+	overflow: hidden
+
+.burger_menu
+	display: none
+
+.map__right
+	margin: 10px
+.map__self
+	margin-top: 10px
+
+@media (max-width:1230px)
+	.slider
+		width: 478px
+		height: 436px
+		&__item-img
+			width: 478px
+			height: 436px
+	.advan__item-txt
+		font-size: 19px
+	.advan__block-left-first::after
+		display: none
+	.text__black
+		font-size: 19px
+	.prise__list
+		font-size: 19px
+	.map__left
+		height: 400px
+    margin: auto
+	.map__list::after
+		top: 203px
+	.header__main-img
+		max-width: 130%
+
+@media (max-width:1100px)
+	.header__main-part:last-child
+		right: 0px
+	.header__main
+		flex-direction: column
+	.header__main-part:last-child
+		position: relative
+		bottom: 0
+		text-align: center
+		margin: auto
+	.header__main-part
+		text-align: center
+		margin-top: 40px
+		margin-bottom: 20px
+	.header__main-part:first-child
+		margin-left: 0
+	.header__main-img
+		width: 50%
+	.header__main-part:first-child
+		float: none
+
+@media (max-width:1095px)
+	.map__inner
+		flex-direction: column
+	.map__self
+		width: 100%
+		height: 300px
+@media (max-width:1075px)
+	.aboutme__box
+		margin-left: 60px
+	.advan__block-right-t::after
+		top: 17px
+	.prise__one
+		flex-direction: column
+		&:last-child
+			flex-direction: column-reverse
+	.prise__first-text, .prise__second-text
+		padding: 20px
+	.prise__first-pic, .prise__second-pic
+		margin: auto
+	.prise__inner
+		padding: 20px
+	.map__inner
+		flex-direction: column
+	.footer__left::before, .footer__right::before, .footer__right::after, .footer__left::after
+		display: none
+	.footer__left
+		margin: auto
+		padding: 30px
+	.footer__right
+		margin: auto auto auto auto
+@media (max-width:1000px)
+	.qual__blocks
+		margin-top: 90px
+
+
+@media (max-width:992px)
+	.burger_menu
+		display: block
+	.menu__list
+		flex-direction: column
+	.menu
+		position: fixed
+		top: -200%
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: $bluelight
+		padding: 109px 10px 20px 10px
+		transition: all .8s ease
+		z-index: 0
+		&:hover
+			background-color: $bluelight
+			color: #fff
+	.active
+		top: 0
+		overflow: scroll
+	.menu__list
+		text-align: center
+		float: none
+		padding-left: 0
+	.menu__item
+		padding-left: 0
+	.menu__link
+		display: block
+		padding-left: 0
+		background-color: $bluelight
+		&:hover
+			background-color: $bluedark
+			color: #fff
+	.menu__items
+		padding-left: 0
+	.menu__item-s
+		display: inline-block
+		width: 100%
+		text-align: center
+		padding-left: 0
+	.aboutme__text
+		max-width: 428px
+	.qual
+		margin-bottom: 467px
+	.advan__item-txt
+		font-size: 15px
+	.prise__img-right
+		max-width: 502px
+	.sub-header
+		padding-top: 0
+	.text__black
+		font-size: 15px
+	.advan__img-left
+		max-width: 494px
+	.prise__list
+		font-size: 15px
+	.prise__list
+		max-width: 260px
+		line-height: 20px
+	.prise__ttl
+		font-size: 20px
+		margin: auto auto 10px auto
+	.prise__img-left
+		max-width: 528px
+		max-height: 701px
+	.qual
+		margin-bottom: 567px
+
+@media (max-width:915px)
+
+@media (max-width:879px)
+	.aboutme__text::after, .aboutme__box-wrapper::after
+		display: none
+	.advan__one
+		flex-direction: column
+		&:last-child
+			flex-direction: column-reverse
+	.advan__block-right-t::after
+		display: none
+	.advan__block-left
+		margin: 36px auto auto auto
+	.advan__one
+		flex-direction: column
+		&:last-child
+			flex-direction: column-reverse
+	.slider
+		margin: 50px auto
+
+@media (max-width:768px)
+	.qual
+		margin-bottom: 678px
+	.aboutme__text
+		&::after
+			right: 265px
+	.aboutme__photo-img
+		width: 90%
+	.aboutme__text
+		font-size: 19px
+		line-height: 23px
+	.aboutme__text
+		max-width: 401px
+	.aboutme__text::before
+		display: none
+	.header1, .header
+		height: 60px
+	.line1, .line2, .line3
+		width: 40px
+		height: 3px
+		margin: 8px 0
+	.burger_menu
+		padding: 11px
+	.rotate .line1
+		transform: rotate(45deg) translate(13px, 4px)
+	.rotate .line3
+		transform: rotate(-45deg) translate(11px, -3px)
+	.top-line
+		height: 60px
+	.logo
+		line-height: 60px
+		font-size: 20px
+	.menu
+		padding: 69px 10px 20px 10px
+	.menu__link
+		line-height: 70px
+	.header__main-ttl
+		font-size: 40px
+	.header__main-subttl
+		font-size: 20px
+		line-height: 28px
+	.qual__p
+		font-size: 20px
+	.qual__block-one
+		padding: 16px 16px
+	.qual__blocks
+		margin-top: 100px
+	.qual__block-p
+		text-align: center
+	.qual__block-p
+		font-size: 15px
+	.qual
+		margin-bottom: 400px
+	.sub-header__inner
+		min-height: 427px
+	.qual__block-ttl
+		font-size: 20px
+	.qual__block-p
+		margin-bottom: 0px
+	.button-blue
+		font-size: 19px
+		padding: 5px 30px
+	.map__list::after
+		right: 62px
+		top: 134px
+	.map__left
+		height: 363px
+	.map__list::before
+		display: none
+	.footer__inner
+		flex-direction: column
+	.header__main
+		display: flex
+		flex-direction: column
+
+@media (max-width:700px)
+	.qual
+		margin-bottom: 447px
+
+@media (max-width:642px)
+	.qual__blocks
+		margin-top: 50px
+		flex-direction: column
+	.qual__block-one
+		max-width: 100%
+	.qual
+		margin-bottom: 444px
+
+@media (max-width:642px)
+	.qual
+		margin-bottom: 550px
+
+@media (max-width:522px)
+	.qual
+		margin-bottom: 550px
+	.prise__img-left, .prise__img-right, .advan__img-left
+		max-width: 228px
+	.slider, .slider__item-img
+		max-width: 278px
+		height: 304px
+	.map__list::after
+		display: none
+	.qual
+		height: 100%
+		margin-bottom: 50px
+		padding-bottom: 50px
+	.aboutme__inner
+		flex-direction: column-reverse
+	.aboutme__photo-img
+		max-width: 50%
+	.aboutme__photo
+		text-align: center
+		padding-top: 30px
+	.aboutme
+		margin-bottom: 50px
+	.prise__list
+		font-size: 12px
+	.map__left
+		max-width: 100%
+		margin: 10px
+	.map__img-m
+		width: 53px
+		height: 38px
+		transform: translatex(-4px)
+	.advan__block-right-t
+		margin: 10px
+	.advan__block-left-first
+		margin: 0
+	.map__left
+		height: 320px
+	.prise__item
+		text-align: center
+	.aboutme__box
+		margin-left: 10px
+	.qual__p
+		padding: 0 20px 20px 20px
+		font-size: 17px
+	.qual__ttl
+		font-size: 24px
+	.qual__text
+		width: 100%
+	.advan
+    margin-bottom: 50px
+	.map__left
+		margin-bottom: -26px
+	.footer__text
+		font-size: 20px
+
+
+
+
+
+
+@import "media" // Always at the end
